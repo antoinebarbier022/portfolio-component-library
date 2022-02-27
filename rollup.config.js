@@ -4,7 +4,7 @@ import image from "@rollup/plugin-image";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
-
+import svg from 'rollup-plugin-svg'
 
 const packageJson = require("./package.json");
 
@@ -25,6 +25,7 @@ export default [
     ],
     plugins: [
       image(),
+      svg(),
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),

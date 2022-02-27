@@ -16,7 +16,7 @@ function ExempleA() {
     return (<Card className="text-white">
         <div className="w-full flex flex-col gap-6">
             <div className="flex md:flex-col gap-5 items-center">
-                <Avatar variant={"rounded"}/>
+                <Avatar variant={"rounded"} src={undefined}/>
                 <div className="text-center">
                     <Title>Antoine Barbier</Title>
                     <Subtitle>Developpeur web</Subtitle>
