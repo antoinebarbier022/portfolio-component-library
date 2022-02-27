@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import LinkCard from '../LinkCard/Link.component';
+import LinkCard from '../Link/Link.component';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {

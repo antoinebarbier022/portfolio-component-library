@@ -12,10 +12,7 @@ import Title from "../../components/Title/Title.component";
 import YoutubeSlide from "../../components/YoutubeSlide/YoutubeSlide.component";
 
 
-
-
 function ExempleA() {
-
     return (<Card className="text-white">
         <div className="w-full flex flex-col gap-6">
             <div className="flex md:flex-col gap-5 items-center">
@@ -24,8 +21,12 @@ function ExempleA() {
                     <Title>Antoine Barbier</Title>
                     <Subtitle>Developpeur web</Subtitle>
                 </div>
+
    
             </div>
+
+            
+
             <Text>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quod repudiandae quis 
                     assumenda temporibus ut tempora nam, consectetur illo dolorum odit eos officia amet, 
@@ -43,6 +44,7 @@ function ExempleA() {
                     title={true}
                     />
                 <CustomLinksSection />
+                
 
                 <LinksPlateforms data={[
                         { name:"Youtube", link:"https://www.youtube.com/channel/UCrICUI4NCuw-P1VrK4vL_dg" },

@@ -15,5 +15,5 @@ const Template: ComponentStory<typeof Footer> = (args) => <Card><Footer {...args
 
 export const Default = Template.bind({});
 Default.args = {
-    title: "Antoine"
+
 };

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import BasicTabs from "../../components/BasicTabs/BasicTabs.component";
+import React from "react";
 import Card from "../../components/Card/Card.component";
 import Contact from "../../components/Contact/Contact.component";
 import Footer from "../../components/Footer/Footer.component";
@@ -8,10 +7,6 @@ import Subtitle from "../../components/Subtitle/Subtitle.component";
 import Text from "../../components/Text/Text.component";
 import Title from "../../components/Title/Title.component";
 import YoutubeSlide from "../../components/YoutubeSlide/YoutubeSlide.component";
-
-import { Button } from "@mui/material";
-import classNames from "classnames";
-
 
 import { styled } from '@mui/system';
 import TabsUnstyled from '@mui/base/TabsUnstyled';
@@ -90,22 +85,6 @@ const blue = {
 
 function ExempleB() {
 
-    const [test, setTest] = useState(0);
-
-    const styles = {
-        "&.MuiButton-root": {
-          color: "white"
-        },
-        "&.MuiButton-text": {
-          color: "grey"
-        },
-        "&.MuiButton-contained": {
-          color: "yellow"
-        },
-        "&.MuiButton-outlined": {
-          color: "brown"
-        }
-      };
 
     return (<Card className="text-white">
         <div className="w-full flex flex-col gap-6">

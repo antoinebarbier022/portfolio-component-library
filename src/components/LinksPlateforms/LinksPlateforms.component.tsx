@@ -1,6 +1,6 @@
 import './LinksPlateforms.style.css';
-
 // Music Plateforms
+/*
 import { ReactComponent as AppleMusic } from '../../assets/plateforms/apple-music.svg';
 import { ReactComponent as CinqEuros } from '../../assets/plateforms/5euro.svg';
 import { ReactComponent as AmazonMusic} from '../../assets/plateforms/amazon-music.svg';
@@ -22,8 +22,7 @@ import spotify from '../../assets/plateforms/spotify.png';
 import deezer from '../../assets/plateforms/deezer.png';
 import youtube from '../../assets/plateforms/youtube.png';
 
-import { ReactNode } from "react";
-import LinkCard from '../Link/Link.component';
+import LinkCard from '../Link/Link.component';*/
 import React from 'react';
 
 export type PlateformType = "Facebook" | "Instagram" | "Twitch" | "Snapchat" | "Linkedin" | 
@@ -42,8 +41,8 @@ type LinksPlateformsProps = {
 };
 
 function LinksPlateforms( { className, data, } : LinksPlateformsProps) {
-
-    const PlatformeImage = new Map<PlateformType, ReactNode>([
+/*
+    const PlatformeImage = new Map<PlateformType, any>([
       ["Spotify", <img src={spotify} width={130}  alt="logo spotify "></img> ],
       ["Deezer", <img src={deezer} width={130}  alt='logo deezer' ></img> ],
       ["Tiktok", <Tiktok width={150} height={40}/>],
@@ -65,21 +64,21 @@ function LinksPlateforms( { className, data, } : LinksPlateformsProps) {
       ["Youtube", <img src={youtube} width={130} alt="logo Youtube "></img> ],
       ["Bandcamp", <img src={bandcamp} width={130} alt="logo Bandcamp "></img> ],
     ]);
-
+*/
     const styleGrid = (data?.length === 1 || data?.length === 3) ? "grid-cols-1": "grid-cols-2";
 
     if (data === undefined || (data?.length === 0)) {
         return (<></>);
     }
     return (<div className={`section-plateforms container rounded-xl grid gap-2 ${styleGrid} ${className}`}>
-    {
+    {/*
       data !== undefined &&
       data.map( (value, index) => 
       PlatformeImage.get(value.name) &&
         <LinkCard name={value.name} link={value.link} key={index}>
           { PlatformeImage.get(value.name) }
         </LinkCard>
-        )
+        )*/
     }
 </div> );
 }

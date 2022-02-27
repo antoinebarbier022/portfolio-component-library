@@ -2,6 +2,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/splide/dist/css/splide.min.css';
 import './YoutubeSlide.style.css';
 import useRssFlux from "../../hooks/RssFlux.hook";
+
 import { 
     faYoutube 
 } from '@fortawesome/free-brands-svg-icons';
@@ -49,8 +50,13 @@ function YoutubeSlide({ playlistId, chanelId, title = false, hover = true, class
                     rel="noopener noreferrer"
                     target="_blank"
                     className="w-full h-full transition ease-in-out delay-500 ">
-                        
-                <figure className=" h-full w-full">
+                     <figure className=" h-full w-full">
+                    {/*    
+               
+                <iframe width="200" height="150"
+                src={"https://www.youtube.com/embed/" + getYoutubeVideoId(value.link)}>
+                </iframe>* */}
+                
                     <img  src={value.thumbnail} 
                                 alt={value.title} 
                                 className="w-full h-full object-cover m-auto rounded-xl"/>
@@ -68,9 +74,11 @@ function YoutubeSlide({ playlistId, chanelId, title = false, hover = true, class
                                 { new DOMParser().parseFromString( `<!doctype html><body>${value.title}`, 'text/html').body.textContent }
                             </span>
                     }
+                    
                 </figure>
 
                 </a>
+               
 
             </SplideSlide>
       )
