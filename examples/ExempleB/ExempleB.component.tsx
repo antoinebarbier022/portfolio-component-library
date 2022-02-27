@@ -1,12 +1,12 @@
 import React from "react";
-import Card from "../../components/Card/Card.component";
-import Contact from "../../components/Contact/Contact.component";
-import Footer from "../../components/Footer/Footer.component";
-import LinksPlateforms from "../../components/LinksPlateforms/LinksPlateforms.component";
-import Subtitle from "../../components/Subtitle/Subtitle.component";
-import Text from "../../components/Text/Text.component";
-import Title from "../../components/Title/Title.component";
-import YoutubeSlide from "../../components/YoutubeSlide/YoutubeSlide.component";
+import Card from "../../src/components/Card/Card.component";
+import Contact from "../../src/components/Contact/Contact.component";
+import Footer from "../../src/components/Footer/Footer.component";
+import LinksPlateforms from "../../src/components/LinksPlateforms/LinksPlateforms.component";
+import Subtitle from "../../src/components/Subtitle/Subtitle.component";
+import Text from "../../src/components/Text/Text.component";
+import Title from "../../src/components/Title/Title.component";
+import YoutubeSlide from "../../src/components/YoutubeSlide/YoutubeSlide.component";
 
 import { styled } from '@mui/system';
 import TabsUnstyled from '@mui/base/TabsUnstyled';
