@@ -1,7 +1,7 @@
 {
   "name": "@antoinebarbier022/portfolio-component-library",
   "author": "Antoine Barbier",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/antoinebarbier022"
@@ -69,6 +69,7 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "@babel/preset-env": "^7.16.11",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@fortawesome/fontawesome-free": "^6.0.0",
@@ -77,6 +78,7 @@
     "@fortawesome/free-solid-svg-icons": "^6.0.0",
     "@fortawesome/react-fontawesome": "^0.1.17",
     "@mui/material": "^5.4.3",
+    "@rollup/plugin-babel": "^5.3.1",
     "@splidejs/react-splide": "^0.6.20",
     "classnames": "^2.3.1"
   },

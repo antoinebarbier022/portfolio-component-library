@@ -20,13 +20,8 @@ function ExempleA() {
                 <div className="text-center">
                     <Title>Antoine Barbier</Title>
                     <Subtitle>Developpeur web</Subtitle>
-                </div>
-
-   
+                </div>   
             </div>
-
-            
-
             <Text>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quod repudiandae quis 
                     assumenda temporibus ut tempora nam, consectetur illo dolorum odit eos officia amet, 

@@ -5,6 +5,7 @@ import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import svg from 'rollup-plugin-svg'
+import babel from "@rollup/plugin-babel";
 
 const packageJson = require("./package.json");
 
@@ -29,7 +30,22 @@ export default [
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      postcss(),
+      postcss({
+        config: {
+          path: "./postcss.config.js",
+        },
+        extensions: [".css"],
+        minimize: true,
+        inject: {
+          insertAt: "top",
+        },
+        extract: "lib.css",
+      }),
+      babel({
+        babelHelpers: "bundled",
+        extensions: [".ts", ".tsx"],
+        exclude: "node_modules/**",
+      }),
     ],
   },
   {
