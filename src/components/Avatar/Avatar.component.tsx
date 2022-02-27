@@ -12,7 +12,7 @@ function Avatar({ variant = "square", size, className }: AvatarProps) {
         <figure className={className}>
             <img src={"https://picsum.photos/seed/picsum/400/300"} 
                 alt={"data.image.alt"} 
-                className={classNames(`h-[200px] mx-auto border-4 border-white/10 ${size}`,{
+                className={classNames(`min-w-[200px] h-[200px] mx-auto border-4 border-white/10 ${size}`,{
                     'rounded-xl aspect-square': variant === "square",
                     'rounded-full aspect-square': variant === "rounded",
                     'rounded-xl ': variant === "custom",
