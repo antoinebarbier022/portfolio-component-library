@@ -4,6 +4,7 @@ import Contact from "../../components/Contact/Contact.component";
 import CustomLinksSection from "../../components/CustomLinksSection/CustomLinksSection.component";
 import Footer from "../../components/Footer/Footer.component";
 import LinksPlateforms from "../../components/LinksPlateforms/LinksPlateforms.component";
+import SectionExperience from "../../components/SectionExperience/SectionExperience.component";
 import SocialNetworks from "../../components/SocialNetworks/SocialNetworks.component";
 import Subtitle from "../../components/Subtitle/Subtitle.component";
 import Text from "../../components/Text/Text.component";
@@ -30,6 +31,8 @@ function ExempleA() {
                     assumenda temporibus ut tempora nam, consectetur illo dolorum odit eos officia amet, 
                     officiis voluptatibus nostrum animi eum molestias.
                 </Text>
+
+                {/*<SectionExperience/>*/}
        
             <div className="flex flex-col gap-2">
                 <YoutubeSlide 
