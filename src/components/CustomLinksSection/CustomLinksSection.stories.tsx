@@ -15,5 +15,7 @@ const Template: ComponentStory<typeof CustomLinksSection> = (args) => <Card><Cus
 
 export const Default = Template.bind({});
 Default.args = {
-
+  data: [
+    { name: "Lien custom", link:""}
+  ]
 };

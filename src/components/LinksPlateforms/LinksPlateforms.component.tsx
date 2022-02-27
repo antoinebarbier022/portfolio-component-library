@@ -42,10 +42,10 @@ type LinksPlateformsProps = {
 function LinksPlateforms( { className, data, } : LinksPlateformsProps) {
 
     const PlatformeImage = new Map<PlateformType, any>([
-      ["Spotify", <img src={spotify} width={130}  alt="logo spotify "></img> ],
-      ["Deezer", <img src={deezer} width={130}  alt='logo deezer' ></img> ],
-      ["Tiktok", <img src={Tiktok} width={150} height={40} alt='logo tiktok'/>],
-      ["5euros.com", <img src={CinqEuros} height={40} alt='logo 5euros.com'/> ],
+      ["Spotify", <img src={spotify} width={130} height={40} alt="logo spotify "></img> ],
+      ["Deezer", <img src={deezer} width={130} height={40} alt='logo deezer' ></img> ],
+      ["Tiktok", <img src={Tiktok} width={130} height={40} alt='logo tiktok'/>],
+      ["5euros.com", <img src={CinqEuros} width={130} height={30} alt='logo 5euros.com'/> ],
       ["Apple Music", <img src={AppleMusic} alt='logo apple music'/> ],
       ["Facebook", <img src={Facebook}  width={130} height={40} alt='logo facebook'/> ],
       ["Instagram", <img src={instagram} width={130} alt="logo Instagram "></img> ],
@@ -56,7 +56,7 @@ function LinksPlateforms( { className, data, } : LinksPlateformsProps) {
       ["Dribbble", <img src={Dribbble} width={120} height={40}  alt='logo dribbble'/>],
       ["Fiver", <img src={Fiver} width={120} height={30}  alt='logo fiver'/>],
       ["Twitter", <img src={Twitter} width={120} height={40}  alt='logo twitter'/>],
-      ["Twitch", <img src={Twitch} width={120} height={30}  alt='logo twitch'/>],
+      ["Twitch", <img src={Twitch} width={120} height={30}  alt='logo facebook'/>],
       ["Malt", <img src={malt} width={130} alt="logo Malt "></img>],
       ["Gitlab", <img src={gitlab} width={130} alt="logo Gitlab "></img>],
       ["Github", <img src={github} width={130} alt="logo Github "></img>],
