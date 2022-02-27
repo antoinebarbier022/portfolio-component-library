@@ -35,13 +35,12 @@ import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 
 type SocialNetworksProps = {
-    hidden?:boolean,
     data?: Array<{name: PlateformType, link: string}>,
     className?: string
 
 };
 
-function SocialNetworks( { data, hidden = false, className } : SocialNetworksProps) {
+function SocialNetworks( { data, className } : SocialNetworksProps) {
     const PlatformeIcon = new Map<PlateformType, IconProp>([
         ["Facebook", FacebookIcon ],
         ["Instagram", InstagramIcon ],
@@ -70,7 +69,7 @@ function SocialNetworks( { data, hidden = false, className } : SocialNetworksPro
         ["Flickr", FlickrIcon ],
       ]);
 
-    if (hidden || (data?.length === 0)) {
+    if (data === undefined || (data?.length === 0)) {
         return (<></>);
     }
     return ( <div className={`flex flex-wrap gap-10 justify-center m-3 ${className}`}>

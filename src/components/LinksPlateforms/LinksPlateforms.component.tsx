@@ -35,8 +35,8 @@ export type PlateformType = "Facebook" | "Instagram" | "Twitch" | "Snapchat" | "
 
 
 type LinksPlateformsProps = {
-    className?: string,
     data: Array<{name: PlateformType, link: string}> | undefined,
+    className?: string,
 };
 
 function LinksPlateforms( { className, data, } : LinksPlateformsProps) {

@@ -16,10 +16,9 @@ type LinkCardProps = {
     phone?: string,
     location?: string,
     className?: string,
-    hidden?: boolean,
 };
 
-function Contact( { email, phone, location, hidden, className, } : LinkCardProps) {
+function Contact( { email, phone, location, className, } : LinkCardProps) {
     let inline: boolean = [email, phone, location].filter( x => x !== undefined).length === 1;
 
     const items : Array<{ type: string, name: string | undefined, icon: IconProp, link: string | undefined }> = [
@@ -28,7 +27,7 @@ function Contact( { email, phone, location, hidden, className, } : LinkCardProps
         { type: "email", name: email, icon: emailIcon, link: 'mailto:'+ email}  
     ]
 
-    if (hidden || ([email, phone, location].filter( x => x !== undefined).length === 0)) {
+    if (([email, phone, location].filter( x => x !== undefined).length === 0)) {
         return (<></>);
     }
     return (  <div className={`container flex flex-wrap gap-2 overflow-hidden ${className}`}>
