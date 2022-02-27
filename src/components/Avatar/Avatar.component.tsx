@@ -14,7 +14,7 @@ function Avatar({ src, alt= "avatar", variant = "square", size, className }: Ava
         <figure className={className}>
             <img src={src} 
                 alt={alt} 
-                className={classNames(`min-w-[200px] h-[200px] mx-auto border-4 border-white/10 ${size}`,{
+                className={classNames(`avatareheheh min-w-[200px] h-[200px] mx-auto border-4 border-white/10 ${size}`,{
                     'rounded-xl aspect-square': variant === "square",
                     'rounded-full aspect-square': variant === "rounded",
                     'rounded-xl ': variant === "custom",

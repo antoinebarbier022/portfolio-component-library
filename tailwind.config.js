@@ -1,7 +1,9 @@
 module.exports = {
   mode: 'jit',
-  purge: ["./components/**/*.{js,jsx,ts,tsx}"],
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './stories/*'],
+  content: [
+    './src/components/**/*.{js,jsx,ts,tsx}', 
+    './src/index.ts', 
+    './stories/*'],
   theme: {
     extend: {},
   },
