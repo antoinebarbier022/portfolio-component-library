@@ -1,6 +1,11 @@
 {
+  "name": "@antoinebarbier022/portfolio-component-library",
+  "author": "Antoine Barbier",
   "version": "0.0.1",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/antoinebarbier022"
+  },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [
@@ -26,8 +31,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "portfolio-component-library",
-  "author": "Antoine Barbier",
   "module": "dist/portfolio-component-library.esm.js",
   "size-limit": [
     {
