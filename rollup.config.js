@@ -35,11 +35,10 @@ export default [
           path: "./postcss.config.js",
         },
         extensions: [".css"],
-        minimize: true,
+        minimize: false,
         inject: {
           insertAt: "top",
         },
-        extract: "lib.css",
       }),
       babel({
         babelHelpers: "bundled",
@@ -47,13 +46,13 @@ export default [
         exclude: "node_modules/**",
       }),
     ],
+    external: ["react", "react-dom"],
   },
   {
-    input: "dist/types/index.d.ts",
+    input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [
-      dts(),
-      image()],
+      dts()],
     external: [/\.css$/],
   },
 ];
