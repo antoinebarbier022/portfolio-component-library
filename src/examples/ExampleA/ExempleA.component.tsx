@@ -18,11 +18,13 @@ function ExempleA() {
 
     return (<Card className="text-white">
         <div className="w-full flex flex-col gap-6">
-            <Avatar/>
-
-            <div>
-                <Title>Antoine Barbier</Title>
-                <Subtitle>Developpeur web</Subtitle>
+            <div className="flex gap-3 text-center">
+                <Avatar variant={"custom"}/>
+                <div>
+                    <Title>Antoine Barbier</Title>
+                    <Subtitle>Developpeur web</Subtitle>
+                </div>
+   
             </div>
             <Text>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quod repudiandae quis 

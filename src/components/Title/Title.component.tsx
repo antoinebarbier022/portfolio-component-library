@@ -1,6 +1,6 @@
 import React from "react";
 
-type TitleProps ={
+type TitleProps = {
     children: string,
     className?: string
 };

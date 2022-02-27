@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React from "react";
 
 type AvatarProps = {
-    variant: "square" | "rounded";
+    variant?: "square" | "rounded" | "custom";
     size?: string,
     className?: string
 };
@@ -10,12 +10,12 @@ type AvatarProps = {
 function Avatar({ variant = "square", size, className }: AvatarProps) {
     return ( <>
         <figure className={className}>
-            <img src={"https://picsum.photos/seed/picsum/200"} 
+            <img src={"https://picsum.photos/seed/picsum/400/300"} 
                 alt={"data.image.alt"} 
-                className={classNames(`w-[200px] aspect-square mx-auto  border-4 border-white/10 ${size}`,{
-                    'rounded-lg': variant === "square",
-                    'rounded-full': variant === "rounded",
-
+                className={classNames(`h-[200px] mx-auto border-4 border-white/10 ${size}`,{
+                    'rounded-xl aspect-square': variant === "square",
+                    'rounded-full aspect-square': variant === "rounded",
+                    'rounded-xl ': variant === "custom",
                 }
                 )}/>
         </figure>
