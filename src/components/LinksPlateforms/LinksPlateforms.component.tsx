@@ -23,7 +23,7 @@ import deezer from '../../assets/plateforms/deezer.png';
 import youtube from '../../assets/plateforms/youtube.png';
 
 import { ReactNode } from "react";
-import LinkCard from '../LinkCard/Link.component';
+import LinkCard from '../Link/Link.component';
 import React from 'react';
 
 export type PlateformType = "Facebook" | "Instagram" | "Twitch" | "Snapchat" | "Linkedin" | 

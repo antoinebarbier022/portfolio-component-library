@@ -1,5 +1,5 @@
 import React from "react";
-import LinkCard from "../LinkCard/Link.component";
+import LinkCard from "../Link/Link.component";
 
 type CustomLinksSectionType = {
 
