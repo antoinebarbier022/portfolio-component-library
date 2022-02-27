@@ -1,0 +1,3 @@
+.section-plateforms a:last-child:nth-child(odd){
+    @apply col-span-full
+}

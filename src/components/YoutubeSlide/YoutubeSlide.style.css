@@ -1,0 +1,16 @@
+.splide__pagination{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.splide__arrow {
+    margin-top: -1rem;
+}
+
+a #youtube-icon{
+    opacity: 0;
+    transition: opacity ease-in-out 200ms;
+}
+a:hover #youtube-icon{
+    opacity: .7;
+}
