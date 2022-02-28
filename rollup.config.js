@@ -52,6 +52,8 @@ export default [
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
+    sourcemap: true,
+    file: 'dist/esm/index.js',
     plugins: [dts()],
     external: [/\.css$/],
   },
