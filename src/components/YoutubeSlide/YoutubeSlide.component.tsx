@@ -1,7 +1,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import '@splidejs/splide/dist/css/splide.min.css';
 import './YoutubeSlide.style.css';
-import useRssFlux from "../../hooks/RssFlux.hook";
+import useRssFlux from "./RssFlux.hook";
 
 import { 
     faYoutube 
