@@ -1,7 +1,7 @@
 import './LinksPlateforms.style.css';
 // Music Plateforms
 import AppleMusic from '../../assets/apple-music.svg';
-import CinqEuros from '../../assets/5euro.svg';
+import CinqEuros from '../../assets/5euros.svg';
 import AmazonMusic from '../../assets/amazon-music.svg';
 import Soundcloud from '../../assets/soundcloud.svg';
 import Tiktok from '../../assets/tiktok.svg';

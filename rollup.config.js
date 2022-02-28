@@ -6,6 +6,7 @@ import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
 import svg from 'rollup-plugin-svg'
 import babel from "@rollup/plugin-babel";
+import copy from "rollup-plugin-copy-assets";
 
 const packageJson = require("./package.json");
 
@@ -25,7 +26,7 @@ export default [
       },
     ],
     plugins: [
-      image(),
+      image({ extract: 'public/images' }),
       svg(),
       resolve(),
       commonjs(),
@@ -45,14 +46,15 @@ export default [
         extensions: [".ts", ".tsx"],
         exclude: "node_modules/**",
       }),
+      copy({
+        assets: ["src/assets",],
+      }),
     ],
-    external: ["react", "react-dom"],
   },
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
-    plugins: [
-      dts()],
+    plugins: [dts()],
     external: [/\.css$/],
   },
 ];
