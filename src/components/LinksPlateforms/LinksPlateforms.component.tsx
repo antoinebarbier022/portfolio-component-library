@@ -1,25 +1,25 @@
 import './LinksPlateforms.style.css';
 // Music Plateforms
-import AppleMusic from '../../assets/plateforms/apple-music.svg';
-import CinqEuros from '../../assets/plateforms/5euro.svg';
-import AmazonMusic from '../../assets/plateforms/amazon-music.svg';
-import Soundcloud from '../../assets/plateforms/soundcloud.svg';
-import Tiktok from '../../assets/plateforms/tiktok.svg';
-import Facebook from '../../assets/plateforms/facebook.svg';
-import Linkedin from '../../assets/plateforms/linkedin.svg';
-import Dribbble from '../../assets/plateforms/dribbble.svg';
-import Fiver from '../../assets/plateforms/fiver.svg';
-import Twitter from '../../assets/plateforms/twitter.svg';
-import Twitch from '../../assets/plateforms/twitch.svg';
-import malt from '../../assets/plateforms/malt.png';
-import gitlab from '../../assets/plateforms/gitlab.png';
-import github from '../../assets/plateforms/github.png';
-import instagram from '../../assets/plateforms/instagram.png';
-import itunes from '../../assets/plateforms/itunes-store.png';
-import bandcamp from '../../assets/plateforms/bandcamp.png';
-import spotify from '../../assets/plateforms/spotify.png';
-import deezer from '../../assets/plateforms/deezer.png';
-import youtube from '../../assets/plateforms/youtube.png';
+import AppleMusic from '../../assets/apple-music.svg';
+import CinqEuros from '../../assets/5euro.svg';
+import AmazonMusic from '../../assets/amazon-music.svg';
+import Soundcloud from '../../assets/soundcloud.svg';
+import Tiktok from '../../assets/tiktok.svg';
+import Facebook from '../../assets/facebook.svg';
+import Linkedin from '../../assets/linkedin.svg';
+import Dribbble from '../../assets/dribbble.svg';
+import Fiver from '../../assets/fiver.svg';
+import Twitter from '../../assets/twitter.svg';
+import Twitch from '../../assets/twitch.svg';
+import malt from '../../assets/malt.png';
+import gitlab from '../../assets/gitlab.png';
+import github from '../../assets/github.png';
+import instagram from '../../assets/instagram.png';
+import itunes from '../../assets/itunes-store.png';
+import bandcamp from '../../assets/bandcamp.png';
+import spotify from '../../assets/spotify.png';
+import deezer from '../../assets/deezer.png';
+import youtube from '../../assets/youtube.png';
 
 import LinkCard from '../Link/Link.component';
 import React from 'react';
@@ -56,7 +56,7 @@ function LinksPlateforms( { className, data, } : LinksPlateformsProps) {
       ["Dribbble", <img src={Dribbble} width={120} height={40}  alt='logo dribbble'/>],
       ["Fiver", <img src={Fiver} width={120} height={30}  alt='logo fiver'/>],
       ["Twitter", <img src={Twitter} width={120} height={40}  alt='logo twitter'/>],
-      ["Twitch", <img src={Twitch} width={120} height={30}  alt='logo facebook'/>],
+      ["Twitch", <img src={Twitch} width={120} height={30}  alt='logo Twitch'/>],
       ["Malt", <img src={malt} width={130} alt="logo Malt "></img>],
       ["Gitlab", <img src={gitlab} width={130} alt="logo Gitlab "></img>],
       ["Github", <img src={github} width={130} alt="logo Github "></img>],
