@@ -85,6 +85,7 @@
   "dependencies": {
     "@babel/preset-env": "^7.16.11",
     "@rollup/plugin-babel": "^5.3.1",
-    "classnames": "^2.3.1"
+    "classnames": "^2.3.1",
+    "rollup-plugin-sourcemaps": "^0.6.3"
   }
 }

@@ -30,6 +30,7 @@ export default [
       svg(),
       resolve(),
       commonjs(),
+      sourcemaps(),
       typescript({ tsconfig: "./tsconfig.json" }),
       postcss({
         config: {
@@ -54,6 +55,8 @@ export default [
   {
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
+    sourcemap: true,
+    file: 'dist/esm/index.js',
     plugins: [dts()],
     external: [/\.css$/],
   },
