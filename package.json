@@ -1,7 +1,7 @@
 {
   "name": "@antoinebarbier022/portfolio-component-library",
   "author": "Antoine Barbier",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/antoinebarbier022"
