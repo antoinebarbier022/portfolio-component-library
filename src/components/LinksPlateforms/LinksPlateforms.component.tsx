@@ -35,7 +35,7 @@ export type PlateformType = "Facebook" | "Instagram" | "Twitch" | "Snapchat" | "
 
 
 type LinksPlateformsProps = {
-    data: Array<{name: PlateformType, link: string}> | undefined,
+    data: Array<{name: PlateformType, link: string, image?: any}> | undefined,
     className?: string,
 };
 
@@ -75,7 +75,7 @@ function LinksPlateforms( { className, data, } : LinksPlateformsProps) {
       data.map( (value, index) => 
       PlatformeImage.get(value.name) &&
         <LinkCard name={value.name} link={value.link} key={index}>
-          { PlatformeImage.get(value.name) }
+          { value.image ? value.image : PlatformeImage.get(value.name) }
         </LinkCard>
         )
     }
