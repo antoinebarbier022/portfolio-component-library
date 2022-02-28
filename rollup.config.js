@@ -4,7 +4,6 @@ import image from "@rollup/plugin-image";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
-import svg from 'rollup-plugin-svg'
 import babel from "@rollup/plugin-babel";
 import copy from "rollup-plugin-copy-assets";
 
@@ -27,7 +26,6 @@ export default [
     ],
     plugins: [
       image({ extract: 'public/images' }),
-      svg(),
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),

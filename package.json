@@ -1,7 +1,7 @@
 {
   "name": "@antoinebarbier022/portfolio-component-library",
   "author": "Antoine Barbier",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "license": "MIT",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/antoinebarbier022"
@@ -76,7 +76,6 @@
     "rollup-plugin-dts": "^4.1.0",
     "rollup-plugin-image": "^1.0.2",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-svg": "^2.0.0",
     "size-limit": "^7.0.8",
     "tailwindcss": "^3.0.23",
     "tslib": "^2.3.1",
